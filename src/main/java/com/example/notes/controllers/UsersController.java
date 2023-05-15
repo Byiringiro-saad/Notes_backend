@@ -19,7 +19,7 @@ public class UsersController {
         return "User created";
     }
 
-    @PostMapping("/login")
+    @PostMapping("/users/login")
     private String login(@RequestBody UserModel user){
         return usersService.login(user);
     }
