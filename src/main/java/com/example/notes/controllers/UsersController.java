@@ -19,10 +19,10 @@ public class UsersController {
         return "User created";
     }
 
-    @PostMapping("/users/login")
-    private String login(@RequestBody UserModel user){
-        return usersService.login(user);
-    }
+//    @PostMapping("/users/login")
+//    private String login(@RequestBody UserModel user){
+//        return usersService.login(user);
+//    }
 
     @GetMapping("/users")
     private List<UserModel> getAllUsers(){
